@@ -1,0 +1,30 @@
+The following question will ask you about the below neural network, where we set
+w0 = -5, w1 = 2, w2 = -1, and w3 = 3. x1, x2, and x3 represent input neurons, and y represents the output neuron.
+Q: What value will this network compute for y given inputs x1 = 3, x2 = 2, and x3 = 4 if we use a step activation function?
+What if we use a ReLU activation function?
+A: 1 for step activation function, 11 for ReLU activation function
+Explanation:
+    x1 * w1 + x2 * w2 + x3 * w3 + w0 = 3 * 2 + 2 * -1 + 4 * 3 - 5 = 11
+    step: g(x) = 1 if x >= 0 else 0     -> y = 1
+    ReLU: g(x) = max(0, x)              -> y = 11
+
+Q: How many total weights (including biases) will there be for a fully connected neural network with a single input layer
+with 3 units, a single hidden layer with 5 units, and a single output layer with 4 units?
+A: 3 * 5 + 5 + 5 * 4 + 4 = 44
+
+Q: Consider a recurrent neural network that listens to a audio speech sample, and classifies it according to
+whose voice it is. What network architecture is the best fit for this problem?
+    Many-to-one (multiple inputs, single output)
+    Many-to-many (multiple inputs, multiple outputs)
+    One-to-one (single input, single output)
+    One-to-many (single input, multiple outputs)
+A: Many-to-one (multiple inputs, single output)
+
+The following question will ask you about a 4x4 grayscale image with the following pixel values.
+    2   4   6   8
+    16  14  12  10
+    18  20  22  24
+    32  30  28  26
+Q: What would be the result of applying a 2x2 max-pool to the original image?
+Answers are formatted as a matrix [[a, b], [c, d]] where [a, b] is the first row and [c, d] is the second row.
+A: [[16, 12], [32, 28]]

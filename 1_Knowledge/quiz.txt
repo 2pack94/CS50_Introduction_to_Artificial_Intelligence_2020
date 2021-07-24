@@ -1,0 +1,45 @@
+The following question will ask you about the following logical sentences.
+1. If Hermione is in the library, then Harry is in the library.
+2. Hermione is in the library.
+3. Ron is in the library and Ron is not in the library.
+4. Harry is in the library.
+5. Harry is not in the library or Hermione is in the library.
+6. Ron is in the library or Hermione is in the library.
+Q: Which of the following logical entailments is true?
+    Sentence 6 entails Sentence 2
+    Sentence 1 entails Sentence 4
+    Sentence 6 entails Sentence 3
+    Sentence 2 entails Sentence 5
+    Sentence 5 entails Sentence 6
+    Sentence 1 entails Sentence 2
+A: Sentence 2 entails Sentence 5
+Proof with Model Checking Algorithm:
+Harry   Hermione    KB (Hermione)   Query (¬ Harry v Hermione)
+---------------------------------------------------------------------------
+False   False       False           -
+False   True        True            True
+True    False       False           -
+True    True        True            True
+Proof by contradiction:
+(Hermione) ∧ ¬ (¬ Harry v Hermione)     // check if (KB ∧ ¬query) is a contradiction
+(Hermione) ∧ (Harry ∧ ¬ Hermione)       // De Morgan’s Law
+Hermione ∧ ¬ Hermione ∧ Harry           // reorder
+() ∧ Harry                              // resolve literal and its negation to an empty clause
+
+Q: There are other logical connectives that exist, other than the ones discussed in lecture.
+One of the most common is "Exclusive Or" (represented using the symbol ⊕).
+The expression A ⊕ B represents the sentence "A or B, but not both."
+Which of the following is logically equivalent to A ⊕ B?
+A: (A ∨ B) ∧ ¬ (A ∧ B)
+
+Q: Let propositional variable R be that "It is raining," the variable C be that "It is cloudy,"
+and the variable S be that "It is sunny." Which of the following a propositional logic
+representation of the sentence "If it is raining, then it is cloudy and not sunny."?
+A: R → (C ∧ ¬S)
+
+Q: Consider, in first-order logic, the following predicate symbols. Student(x) represents the predicate
+that "x is a student." Course(x) represents the predicate that "x is a course."
+Enrolled(x, y) represents the predicate that "x is enrolled in y."
+Which of the following is a first-order logic translation of the sentence
+"There is a course that Harry and Hermione are both enrolled in."?
+A: ∃x. Course(x) ∧ Enrolled(Harry, x) ∧ Enrolled(Hermione, x)

@@ -1,0 +1,45 @@
+The following question will also ask you about the following sentences and
+context-free grammar, where S is the start symbol.
+    S -> NP V
+    NP -> N | A NP
+    A -> "small" | "white"
+    N -> "cats" | "trees"
+    V -> "climb" | "run"
+    Sentence 1: Cats run.
+    Sentence 2: Cats climb trees.
+    Sentence 3: Small cats run.
+    Sentence 4: Small white cats climb.
+Q: Of the four sentences above, which sentences can be derived from the above context-free grammar?
+    Only Sentence 1
+    Only Sentence 1 and Sentence 2
+    Only Sentence 1 and Sentence 3
+    Only Sentence 1 and Sentence 4
+    Only Sentence 1, Sentence 2, and Sentence 3
+    Only Sentence 1, Sentence 2, and Sentence 4
+    Only Sentence 1, Sentence 3, and Sentence 4
+    All four sentences
+    None of the four sentences
+A: Only Sentence 1, Sentence 3, and Sentence 4
+
+The following question will ask you about a corpus with the following documents.
+    Document 1: a a b c
+    Document 2: a c c c d e f
+    Document 3: a c d d d
+    Document 4: a d f
+Q: What is the tf-idf value for "d" in Document 3?
+Round answers to two decimal places. Use the natural logarithm (log base e) when taking a logarithm.
+A: TF + IDF = 3 * log_e(4 / 3) = 0.86
+
+Q: Why is "smoothing" useful when applying Naive Bayes?
+    Smoothing allows Naive Bayes to better handle cases where there are many categories to classify between, instead of just two.
+    Smoothing allows Naive Bayes to turn a conditional probability of evidence given a category into a probability of a category given evidence.
+    Smoothing allows Naive Bayes to be less "naive" by not assuming that evidence is conditionally independent.
+    Smoothing allows Naive Bayes to better handle cases where evidence has never appeared for a particular category.
+A: Smoothing allows Naive Bayes to better handle cases where evidence has never appeared for a particular category.
+
+Q: From the phrase "must be the truth", how many word n-grams of length 2 can be extracted?
+A: 3
+bigrams:
+    must be
+    be the
+    the truth

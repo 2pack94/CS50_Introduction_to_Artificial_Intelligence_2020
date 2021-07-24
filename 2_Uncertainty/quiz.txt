@@ -1,0 +1,24 @@
+Q: Consider a standard 52-card deck of cards with 13 card values (Ace, King, Queen, Jack, and 2-10)
+in each of the four suits (clubs, diamonds, hearts, spades).
+If a card is drawn at random, what is the probability that it is a spade or a two?
+A: P(spade v 2) = P(spade) + P(2) - P(spade ∧ 2) = 1 / 4 + 4 / 52 - 1 / 52 = 0.3077
+
+Q: Imagine flipping two fair coins, where each coin has a Heads side and a Tails side,
+with Heads coming up 50% of the time and Tails coming up 50% of the time.
+What is probability that after flipping those two coins, one of them lands heads and the other lands tails?
+A: P(heads) * P(tails | heads) + P(tails) * P(heads| tails) = 0.5 * 0.5 + 0.5 * 0.5 = 0.5
+
+The following question will ask you about the Bayesian Network shown in lecture.
+Q: Which of the following sentences is true?
+    Assuming we know there is track maintenance, whether or not there is rain does not affect the probability that the appointment is attended.
+    Assuming we know there is track maintenance, whether or not there is rain does not affect the probability that the train is on time.
+    Assuming we know the train is on time, whether or not there is track maintenance does not affect the probability that the appointment is attended.
+    Assuming we know there is rain, whether or not there is track maintenance does not affect the probability that the train is on time.
+    Assuming we know the train is on time, whether or not there is rain affects the probability that the appointment is attended.
+A: Assuming we know the train is on time, whether or not there is track maintenance does not affect the probability that the appointment is attended.
+
+Q: Two factories — Factory A and Factory B — design batteries to be used in mobile phones.
+Factory A produces 60% of all batteries, and Factory B produces the other 40%.
+2% of Factory A's batteries have defects, and 4% of Factory B's batteries have defects.
+What is the probability that a battery is both made by Factory A and defective?
+A: P(defect, Factory A) = P(Factory A) * P(defect | Factory A) = 0.6 * 0.02 = 0.012

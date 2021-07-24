@@ -1,0 +1,13 @@
+Q: Between depth first search (DFS) and breadth first search (BFS), which will find a shorter path through a maze?
+A: BFS will sometimes, but not always, find a shorter path than DFS
+(BFS will find a path that is shorter or equal compared to DFS)
+
+Q: ... which one (or multiple, if multiple are possible) could be the algorithm used?
+A: Could only be DFS
+
+Q: Why is depth-limited minimax sometimes preferable to minimax without a depth limit?
+A: Depth-limited minimax can arrive at a decision more quickly because it explores fewer states
+
+Q: ... What is the value of the root node?
+A: 5
+
